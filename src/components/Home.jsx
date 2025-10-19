@@ -4,17 +4,26 @@ import image1 from "../assets/image.png"
 import image2 from "../assets/smart watch.jpg"
 import image3 from "../assets/mouse.jpg"
 import image4 from "../assets/keyboard.jpg"
+import image5 from "../assets/jacket.jpg"
+import image6 from "../assets/shoes.jpg"
+import image7 from "../assets/trouser.jpg"
+import image8 from "../assets/tshirt.jpg"
 const products = [
   { name: "Wireless Headphones", price: 299, category: "Electronics", image: image1 },
   { name: "Smart Watch", price: 399, category: "Electronics", image: image2 },
   { name: "mouse", price: 89, category: "Electronics", image: image3 },
   { name: "Wireless Keyboard", price: 129, category: "Electronics", image: image4},
-  {name:"Jacket"}
+   
+   { name: "Jacket Classic", price: 199, category: "Fashion", image: image5 },
+  { name: "Sneakers", price: 149, category: "Fashion", image: image6 },
+  { name: "Trouser", price: 99, category: "Fashion", image: image7 },
+  { name: "Cotton T-shirt", price: 49, category: "Fashion", image: image8 },
+
 ];
 
 const Home = () => {
   return (
-    <div>
+    <div className="ml-0 md:ml-64">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-purple-600 to-purple-400 text-white text-center py-20 px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-2">Discover Amazing Products</h1>

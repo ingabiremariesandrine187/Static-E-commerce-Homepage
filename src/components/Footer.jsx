@@ -5,9 +5,9 @@ import { MapPin, Phone, Mail, Facebook, Twitter, Instagram } from "lucide-react"
 
 function Footer() {
   return (
-    <footer className="bg-gray-50 w-full">
+    <footer className="bg-gray-50 w-full ml-0 md:ml-30 overflow-x-hidden">
       {/* Use container-fluid style: no max-width, edge-to-edge */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-6 py-10 text-gray-700 w-full">
+      <div className="max-w-[1200px] mx-auto px-8 py-10 text-gray-700 grid grid-cols-1 md:grid-cols-4 gap-8">
         
         {/* Logo & Description */}
         <div>
