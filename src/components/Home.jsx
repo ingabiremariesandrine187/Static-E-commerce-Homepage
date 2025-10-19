@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
-
+import image1 from "../assets/image.png"
+import image2 from "../assets/smart watch.jpg"
+import image3 from "../assets/mouse.jpg"
+import image4 from "../assets/keyboard.jpg"
 const products = [
-  { name: "Wireless Headphones", price: 299, category: "Electronics", image: "https://via.placeholder.com/300x200" },
-  { name: "Smart Watch", price: 399, category: "Electronics", image: "https://via.placeholder.com/300x200" },
-  { name: "Laptop Stand", price: 89, category: "Electronics", image: "https://via.placeholder.com/300x200" },
-  { name: "Wireless Keyboard", price: 129, category: "Electronics", image: "https://via.placeholder.com/300x200" },
+  { name: "Wireless Headphones", price: 299, category: "Electronics", image: image1 },
+  { name: "Smart Watch", price: 399, category: "Electronics", image: image2 },
+  { name: "mouse", price: 89, category: "Electronics", image: image3 },
+  { name: "Wireless Keyboard", price: 129, category: "Electronics", image: image4},
+  {name:"Jacket"}
 ];
 
 const Home = () => {

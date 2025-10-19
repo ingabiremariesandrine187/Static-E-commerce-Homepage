@@ -1,6 +1,6 @@
 const ProductCard = ({ image, name, price, category }) => {
   const handleAddToCart = () => {
-    console.log(`Added ${name} to cart`);
+    alert(`Added ${name} to cart`);
   };
 
   return (
