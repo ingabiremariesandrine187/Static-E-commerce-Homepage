@@ -38,39 +38,44 @@ const Products = () => {
       : productList.filter((p) => p.category === selectedCategory);
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-14">
-      <div className="text-center mb-10">
-        <h1 className="text-4xl font-extrabold text-gray-800 mb-2">Our Products</h1>
-        <p className="text-gray-500 text-lg">
-          Browse our complete collection of quality products
-        </p>
-      </div>
+    <div className="md:ml-64 ml-0 px-6 py-14 transition-all duration-300">
+      {/* ✅ md:ml-64 pushes content to the right when sidebar is visible on desktop */}
 
-      {/* Category Buttons */}
-      <div className="flex justify-center flex-wrap gap-4 mb-10">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setSelectedCategory(cat)}
-            className={`px-5 py-2 rounded-lg border text-sm font-medium transition ${
-              selectedCategory === cat
-                ? "bg-purple-600 text-white shadow"
-                : "border-gray-300 text-gray-600 hover:bg-purple-100"
-            }`}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-10">
+          <h1 className="text-4xl font-extrabold text-gray-800 mb-2">Our Products</h1>
+          <p className="text-gray-500 text-lg">
+            Browse our complete collection of quality products
+          </p>
+        </div>
 
-      {/* Product Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {filteredProducts.map((p, index) => (
-          <ProductCard key={index} {...p} />
-        ))}
+        {/* Category Buttons */}
+        <div className="flex justify-center flex-wrap gap-4 mb-10">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setSelectedCategory(cat)}
+              className={`px-5 py-2 rounded-lg border text-sm font-medium transition ${
+                selectedCategory === cat
+                  ? "bg-purple-600 text-white shadow"
+                  : "border-gray-300 text-gray-600 hover:bg-purple-100"
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        {/* Product Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {filteredProducts.map((p, index) => (
+            <ProductCard key={index} {...p} />
+          ))}
+        </div>
       </div>
     </div>
   );
 };
+
 
 export default Products;
