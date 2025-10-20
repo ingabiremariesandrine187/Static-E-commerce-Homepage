@@ -1,21 +1,40 @@
-<<<<<<< HEAD
-# React + Vite
+Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple static e-commerce website built with React and Tailwind CSS. It includes multiple pages, reusable components, and basic event handling.
 
-Currently, two official plugins are available:
+Home Page: Hero banner, featured products, and “Shop Now” button.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Products Page: Product categories with images, prices, and “Add to Cart” button.
 
-## React Compiler
+About Page: Company description and “Why Choose Us” section.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Contact Page: Contact details and feedback form.
 
-## Expanding the ESLint configuration
+Components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Static-E-commerce-Homepage
-A clean and responsive landing page built with React and Tailwind CSS. It includes a modern navbar, product sections, and a simple layout suitable for showcasing an online store.
->>>>>>> f5be5f18b81bc5ce72923ddb0cf0ad0698856f09
+Navbar
+
+Footer
+
+ProductCard (uses props)
+
+HeroSection
+
+Features
+
+Responsive design
+
+Routing between pages (React Router DOM)
+
+Event handling (e.g., Add to Cart, Contact form)
+
+Dynamic data passed via props
+
+
+Technologies Used
+
+React • Tailwind CSS • React Router DOM • Vite • Git/GitHub
+
+
+
+![alt text](image.png)
