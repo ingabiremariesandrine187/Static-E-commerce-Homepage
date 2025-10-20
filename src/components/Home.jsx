@@ -19,6 +19,9 @@ const products = [
   { name: "Trouser", price: 99, category: "Fashion", image: image7 },
   { name: "Cotton T-shirt", price: 49, category: "Fashion", image: image8 },
 
+
+  
+
 ];
 
 const Home = () => {
