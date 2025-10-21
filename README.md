@@ -38,3 +38,7 @@ React • Tailwind CSS • React Router DOM • Vite • Git/GitHub
 
 
 ![alt text](image.png)
+
+
+
+https://static-e-commerce-homepage-theta.vercel.app/
